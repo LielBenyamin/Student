@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2B48C"
+        android:titleTextColor="#FFFFFFFF"
+        android:elevation="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+
+    <ImageView
+        android:id="@+id/studentImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/default_student_image"
+        android:contentDescription="Student Image"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="@android:color/white"
+        android:layout_margin="4dp"
+        android:elevation="4dp"/>
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/addressLabelTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/PhoneTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+
+        <CheckBox
+            android:id="@+id/studentStatusCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false" />
+
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unchecked"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Student"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D2B48C"
+        android:textSize="19sp"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+
+

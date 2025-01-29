@@ -1,0 +1,46 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D2B48C"
+            android:titleTextColor="#FFFFFFFF"
+            android:elevation="4dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addStudentButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#D2B48C"
+        android:text="+"
+        android:textSize="35sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end" />
+</FrameLayout>
